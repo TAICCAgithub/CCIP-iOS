@@ -7,8 +7,8 @@
 */
 /* Localized versions of Info.plist keys */
 
-CFBundleDisplayName = "OPass";
-CFBundleName = "OPass";
+CFBundleDisplayName = "TCCF";
+CFBundleName = "TCCF";
 NSLocationAlwaysUsageDescription = "Use your location service for check your pass is in validated range to use";
 NSLocationWhenInUseUsageDescription = "Use your location service for check your pass is in validated range to use";
 NSLocationAlwaysAndWhenInUseUsageDescription = "Use your location service for check your pass is in validated range to use";

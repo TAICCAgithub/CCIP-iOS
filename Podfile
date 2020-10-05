@@ -53,14 +53,14 @@ def opass_pods
   pod 'CryptoSwift', '~> 1.0'
 end
 
-target 'OPass' do
+target 'TCCF' do
   pod_settings
   onesignal
   opass_pods
   swift_lint
 end
 
-target 'OPass Notification Service' do
+target 'TCCF Notification Service' do
   pod_settings
   onesignal
   swift_lint

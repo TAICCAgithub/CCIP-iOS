@@ -2,20 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>OPass</key>
+	<key>TCCF</key>
 	<dict>
 		<key>PortalDomain</key>
-		<string>portal.opass.app</string>
+		<string>taiccagithub.github.io</string>
 		<key>AcknowledgementsRepo</key>
-		<string>CCIP-App/CCIP-iOS</string>
+		<string>TAICCAgithub/CCIP-iOS</string>
 		<key>PrivacyURL</key>
 		<string>https://opass.app/privacy-policy.html</string>
 		<key>HideContributor</key>
-		<false/>
+		<true/>
 		<key>HideLibraries</key>
-		<false/>
+		<true/>
 		<key>ogToken</key>
-		<string>b6213f49-e356-4b48-aa9d-7cf10ce1904d</string>
+		<string>3bc3b7f0-e5de-4072-a5c4-b8ac44624839</string>
 		<key>scandit</key>
 		<string>2BXy4CfQi9QFc12JnjId7mHH58SdYzNC90Uo07luUUY</string>
 		<key>DisplayDateTimeFormat</key>
@@ -33,25 +33,25 @@
 			<key>EventSwitcherTextColor</key>
 			<string>#ffffff</string>
 			<key>RedeemButtonLeftColor</key>
-			<string>#170a31</string>
+			<string>#878787</string>
 			<key>RedeemButtonRightColor</key>
-			<string>#532875</string>
+			<string>#ff3a1e</string>
 			<key>RedeemCodeTextColor</key>
-			<string>#425d4f</string>
+			<string>#ff3a1e</string>
 			<key>CheckinButtonLeftColor</key>
-			<string>#170a31</string>
+			<string>#878787</string>
 			<key>CheckinButtonRightColor</key>
 			<string>#532875</string>
 			<key>DisabledButtonLeftColor</key>
-			<string>#c5c2cb</string>
+			<string>#878787</string>
 			<key>DisabledButtonRightColor</key>
-			<string>#c5c2cb</string>
+			<string>#878787</string>
 			<key>UsedButtonLeftColor</key>
-			<string>#887397</string>
+			<string>#878787</string>
 			<key>UsedButtonRightColor</key>
-			<string>#cfc0d9</string>
+			<string>#878787</string>
 			<key>MessageButtonLeftColor</key>
-			<string>#170a31</string>
+			<string>#ff3a1e</string>
 			<key>MessageButtonRightColor</key>
 			<string>#532875</string>
 			<key>NavigationIndicatorColor</key>
@@ -59,21 +59,21 @@
 			<key>ProgressBarColor</key>
 			<string>#ffffff</string>
 			<key>HighlightedColor</key>
-			<string>#4d256f</string>
+			<string>#ff3a1e</string>
 			<key>LabelTextColor</key>
-			<string>#4d256f</string>
+			<string>#ffffff</string>
 			<key>CardTextColor</key>
 			<string>#4d256f</string>
 			<key>FavoriteButtonColor</key>
-			<string>#67328c</string>
+			<string>#878787</string>
 			<key>CheckinRectangleLeftColor</key>
-			<string>#170a31</string>
+			<string>#ff3a1e</string>
 			<key>CheckinRectangleRightColor</key>
-			<string>#67328c</string>
+			<string>#878787</string>
 			<key>SessionTitleLeftColor</key>
-			<string>#170a31</string>
+			<string>#ff3a1e</string>
 			<key>SessionTitleRightColor</key>
-			<string>#67328c</string>
+			<string>#878787</string>
 			<key>SessionDateTitleTextColor</key>
 			<string>#ffffff</string>
 			<key>SessionDateIndicatorColor</key>
@@ -87,9 +87,9 @@
 			<key>SessionSectionTitleTextColor</key>
 			<string>#4d256f</string>
 			<key>AnnouncementTitleLeftColor</key>
-			<string>#170a31</string>
+			<string>#ff3a1e</string>
 			<key>AnnouncementTitleRightColor</key>
-			<string>#67328c</string>
+			<string>#878787</string>
 			<key>AnnouncementNoContentTextColor</key>
 			<string>#425d4f</string>
 			<key>AnnouncementSectionTitleBackgroundColor</key>
@@ -99,15 +99,15 @@
 			<key>AnnouncementDashedLineColor</key>
 			<string>#e9e9e9</string>
 			<key>IRCTitleLeftColor</key>
-			<string>#170a31</string>
+			<string>#ff3a1e</string>
 			<key>IRCTitleRightColor</key>
-			<string>#67328c</string>
+			<string>#878787</string>
 			<key>IRCTitleTextColor</key>
 			<string>#425d4f</string>
 			<key>MoreTitleLeftColor</key>
-			<string>#170a31</string>
+			<string>#ff3a1e</string>
 			<key>MoreTitleRightColor</key>
-			<string>#67328c</string>
+			<string>#878787</string>
 		</dict>
 	</dict>
 </dict>

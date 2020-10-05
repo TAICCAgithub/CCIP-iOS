@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:OPass.xcodeproj">
+      location = "group:/Users/haraguroicha/gitRepos/OPass/TCCF-CCIP-iOS/TCCF.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

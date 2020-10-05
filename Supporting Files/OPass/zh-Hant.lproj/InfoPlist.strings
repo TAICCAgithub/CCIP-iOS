@@ -7,8 +7,8 @@
 */
 /* Localized versions of Info.plist keys */
 
-CFBundleDisplayName = "OPass 通關";
-CFBundleName = "OPass 通關";
+CFBundleDisplayName = "TCCF";
+CFBundleName = "TCCF";
 NSLocationAlwaysUsageDescription = "使用您的地理位置來確認你是否可以使用入場卷";
 NSLocationWhenInUseUsageDescription = "使用您的地理位置來確認你是否可以使用入場卷";
 NSLocationAlwaysAndWhenInUseUsageDescription = "使用您的地理位置來確認你是否可以使用入場卷";
