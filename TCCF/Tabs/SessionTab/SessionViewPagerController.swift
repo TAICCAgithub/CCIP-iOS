@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import MBProgressHUD
+import WebKit
 
 class SessionViewPagerController: ViewPagerController, ViewPagerDataSource, ViewPagerDelegate {
     private var _endpointKey: String? = nil
@@ -85,6 +86,13 @@ class SessionViewPagerController: ViewPagerController, ViewPagerDataSource, View
         }
     }
 
+    func showEmpty() {
+        let markdownStyleString = "您好，您尚未預約任何會議，\n\n內容交易會以台灣原創內容為核心，邀請您探索精彩作品，並與創作者、出版社、版權代表、電視台、影視製作單位、發行商...等進行洽商會議，發展多元的合作機會。\n\n請至：https://cct2020sys.utrust.com.tw/dispPageBox/cct/match.html 預約媒合會議。"
+        let webConfig = WKWebViewConfiguration()
+        webConfig.dataDetectorTypes = [.link]
+        let _ = MarkdownView.init(markdownStyleString, toView: self.view, config: webConfig)
+    }
+
     func refreshData(_ onSuccess: (() -> Void)? = nil) {
         OPassAPI.GetSessionData(OPassAPI.currentEvent, self.endpointKey ?? String(describing: OPassKnownFeatures.Schedule)) { (success, data, err) in
             if (success) {
@@ -92,13 +100,18 @@ class SessionViewPagerController: ViewPagerController, ViewPagerDataSource, View
                 self.setSessionDate()
                 self.saveProgramsData()
 
+                if self.programs?.Sessions.count == 0 {
+                    self.showEmpty()
+                }
+
                 onSuccess?()
             } else {
-                UIAlertController.alertOfTitle("Error", withMessage: err.localizedDescription, cancelButtonText: "Okay", cancelStyle: .destructive, cancelAction: nil).showAlert {
-                    UIImpactFeedback.triggerFeedback(.impactFeedbackHeavy)
-                }
-                NSLog("Error: \(err.localizedDescription)")
-                self.loadProgramsData()
+                self.showEmpty()
+//                UIAlertController.alertOfTitle("Error", withMessage: err.localizedDescription, cancelButtonText: "Okay", cancelStyle: .destructive, cancelAction: nil).showAlert {
+//                    UIImpactFeedback.triggerFeedback(.impactFeedbackHeavy)
+//                }
+//                NSLog("Error: \(err.localizedDescription)")
+//                self.loadProgramsData()
             }
         }
     }
