@@ -13,7 +13,7 @@ import SwiftDate
 
 enum OPassKnownFeatures: String {
     case FastPass = "fastpass"
-    case Schedule = "schedule"
+    case Schedule = "schedule1"
     case Announcement = "announcement"
     case Puzzle = "puzzle"
     case Ticket = "ticket"
