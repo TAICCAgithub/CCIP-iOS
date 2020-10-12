@@ -254,6 +254,11 @@ extension OPassAPI {
     private static var favoritesLists: Dictionary<String, [String]> = [:]
 
     static func GetFavoritesList(_ event: String, _ token: String) -> [String] {
+        // dirty hack start
+        if let favList = OPassAPI.userInfo?._data["registered"].arrayObject as? [String] {
+            return favList
+        }
+        // dirty hack end
         let key = OPassAPI.GetFavoritesStoreKey(event, token)
         if let favoritesList = self.favoritesLists[key] {
             return favoritesList

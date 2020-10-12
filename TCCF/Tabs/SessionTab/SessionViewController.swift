@@ -63,8 +63,8 @@ class SessionViewController: UIViewController {
         let uiBarButton_Fake = UIBarButtonItem.init(customView: uiButton_Fake)
 
         // Set Navigation Buttons
-        self.navigationItem.setRightBarButtonItems([uiBarButton_Favorites, uiBarButton_Search], animated: true)
-        self.navigationItem.setLeftBarButtonItems([uiBarButton_Fake, uiBarButton_Fake], animated: true)
+        self.navigationItem.setRightBarButtonItems([/*uiBarButton_Favorites, */uiBarButton_Search], animated: true)
+        self.navigationItem.setLeftBarButtonItems([/*uiBarButton_Fake, */uiBarButton_Fake], animated: true)
 
         let frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 239)
         let headView = UIView.init(frame: frame)
