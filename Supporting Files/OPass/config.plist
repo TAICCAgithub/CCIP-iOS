@@ -33,23 +33,23 @@
 			<key>EventSwitcherTextColor</key>
 			<string>#ffffff</string>
 			<key>RedeemButtonLeftColor</key>
-			<string>#878787</string>
+			<string>#ff3a1e</string>
 			<key>RedeemButtonRightColor</key>
 			<string>#ff3a1e</string>
 			<key>RedeemCodeTextColor</key>
-			<string>#ff3a1e</string>
-			<key>CheckinButtonLeftColor</key>
 			<string>#878787</string>
+			<key>CheckinButtonLeftColor</key>
+			<string>#ff3a1e</string>
 			<key>CheckinButtonRightColor</key>
-			<string>#532875</string>
+			<string>#ff3a1e</string>
 			<key>DisabledButtonLeftColor</key>
 			<string>#878787</string>
 			<key>DisabledButtonRightColor</key>
 			<string>#878787</string>
 			<key>UsedButtonLeftColor</key>
-			<string>#878787</string>
+			<string>#000000</string>
 			<key>UsedButtonRightColor</key>
-			<string>#878787</string>
+			<string>#000000</string>
 			<key>MessageButtonLeftColor</key>
 			<string>#ff3a1e</string>
 			<key>MessageButtonRightColor</key>
@@ -65,49 +65,49 @@
 			<key>CardTextColor</key>
 			<string>#4d256f</string>
 			<key>FavoriteButtonColor</key>
-			<string>#878787</string>
+			<string>#ff3a1e</string>
 			<key>CheckinRectangleLeftColor</key>
-			<string>#ff3a1e</string>
+			<string>#000000</string>
 			<key>CheckinRectangleRightColor</key>
-			<string>#878787</string>
+			<string>#000000</string>
 			<key>SessionTitleLeftColor</key>
-			<string>#ff3a1e</string>
+			<string>#000000</string>
 			<key>SessionTitleRightColor</key>
-			<string>#878787</string>
+			<string>#000000</string>
 			<key>SessionDateTitleTextColor</key>
 			<string>#ffffff</string>
 			<key>SessionDateIndicatorColor</key>
-			<string>#ffffff</string>
+			<string>#ff3a1e</string>
 			<key>SessionDetailHeaderTextColor</key>
 			<string>#ffffff</string>
 			<key>SessionMetaHeaderTextColor</key>
 			<string>#000000</string>
 			<key>SessionSectionTitleBackgroundColor</key>
-			<string>#fbf6ff</string>
+			<string>#ffffff</string>
 			<key>SessionSectionTitleTextColor</key>
-			<string>#4d256f</string>
+			<string>#ff3a1e</string>
 			<key>AnnouncementTitleLeftColor</key>
-			<string>#ff3a1e</string>
+			<string>#000000</string>
 			<key>AnnouncementTitleRightColor</key>
-			<string>#878787</string>
+			<string>#000000</string>
 			<key>AnnouncementNoContentTextColor</key>
-			<string>#425d4f</string>
+			<string>#000000</string>
 			<key>AnnouncementSectionTitleBackgroundColor</key>
-			<string>#efefef</string>
+			<string>#ff3a1e</string>
 			<key>AnnouncementSectionTitleTextColor</key>
-			<string>#333333</string>
+			<string>#ffffff</string>
 			<key>AnnouncementDashedLineColor</key>
-			<string>#e9e9e9</string>
+			<string>#878787</string>
 			<key>IRCTitleLeftColor</key>
-			<string>#ff3a1e</string>
+			<string>#000000</string>
 			<key>IRCTitleRightColor</key>
-			<string>#878787</string>
+			<string>#000000</string>
 			<key>IRCTitleTextColor</key>
-			<string>#425d4f</string>
-			<key>MoreTitleLeftColor</key>
-			<string>#ff3a1e</string>
-			<key>MoreTitleRightColor</key>
 			<string>#878787</string>
+			<key>MoreTitleLeftColor</key>
+			<string>#000000</string>
+			<key>MoreTitleRightColor</key>
+			<string>#000000</string>
 		</dict>
 	</dict>
 </dict>
