@@ -122,7 +122,6 @@
 		6BE8A22C220DF0210035CFD8 /* NSString+StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8A22B220DF0210035CFD8 /* NSString+StringExt.swift */; };
 		6BE8A22E220E11160035CFD8 /* JSONSerialization+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8A22D220E11160035CFD8 /* JSONSerialization+Ext.swift */; };
 		6BEB310D1F262EF30050759D /* EFQRCode+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEB310C1F262EF30050759D /* EFQRCode+Ext.swift */; };
-		6BF331501F2991C4004BEEA6 /* PassAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6BF3314F1F2991C4004BEEA6 /* PassAssets.bundle */; };
 		6BF331521F299207004BEEA6 /* AssetsUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6BF331511F299207004BEEA6 /* AssetsUI.bundle */; };
 		6C7C1B5144B676A0DFDA690C /* Pods_OPass_Notification_Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892BD4AFE92612F68FEC0610 /* Pods_OPass_Notification_Service.framework */; };
 		6F1E7A1A5C60140E807B118F /* Pods_OPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0EA2CF879AB2AB4CA09023 /* Pods_OPass.framework */; };
@@ -328,7 +327,6 @@
 		6BE8A22B220DF0210035CFD8 /* NSString+StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+StringExt.swift"; sourceTree = "<group>"; };
 		6BE8A22D220E11160035CFD8 /* JSONSerialization+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONSerialization+Ext.swift"; sourceTree = "<group>"; };
 		6BEB310C1F262EF30050759D /* EFQRCode+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EFQRCode+Ext.swift"; sourceTree = "<group>"; };
-		6BF3314F1F2991C4004BEEA6 /* PassAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PassAssets.bundle; sourceTree = "<group>"; };
 		6BF331511F299207004BEEA6 /* AssetsUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AssetsUI.bundle; sourceTree = "<group>"; };
 		6F0EA2CF879AB2AB4CA09023 /* Pods_OPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F12A5510F2FFDA3E20E8E5 /* Pods-OPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPass.release.xcconfig"; path = "Pods/Target Support Files/Pods-OPass/Pods-OPass.release.xcconfig"; sourceTree = "<group>"; };
@@ -472,7 +470,6 @@
 				6B0B84D01D2B860D00DE18B0 /* InfoPlist.strings */,
 				6B2CD5971D2886C900793194 /* Localizable.strings */,
 				6B036B8F1F24371600D5E5A5 /* Settings.bundle */,
-				6BF3314F1F2991C4004BEEA6 /* PassAssets.bundle */,
 				6BF331511F299207004BEEA6 /* AssetsUI.bundle */,
 				6B4D940E24F803EB00F8D0BD /* WebViewAssets.bundle */,
 				5F67CE171D1EB54200B9DAA9 /* GoogleService-Info.plist */,
@@ -913,7 +910,6 @@
 				6BF331521F299207004BEEA6 /* AssetsUI.bundle in Resources */,
 				6B9A279A222B00C300E8463E /* OPassEventCell.xib in Resources */,
 				6B0B84CE1D2B860D00DE18B0 /* InfoPlist.strings in Resources */,
-				6BF331501F2991C4004BEEA6 /* PassAssets.bundle in Resources */,
 				5F75A479AF13F31C57E574C7 /* Pods-OPass-metadata.plist in Resources */,
 				1424C2022250FC7100D36266 /* Session.storyboard in Resources */,
 			);
