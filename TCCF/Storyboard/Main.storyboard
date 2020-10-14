@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oIA-0H-5s9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oIA-0H-5s9">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Pass Events Controller-->
         <scene sceneID="W50-4d-LrS">
             <objects>
-                <viewController id="oIA-0H-5s9" customClass="OPassEventsController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oIA-0H-5s9" customClass="OPassEventsController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LTi-pS-nFB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +37,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="gHI-GA-NjH"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5hI-zX-76J" firstAttribute="leading" secondItem="gHI-GA-NjH" secondAttribute="leading" constant="20" id="1Ap-Dc-K7F"/>
@@ -52,7 +53,6 @@
                             <constraint firstItem="ABm-1z-p64" firstAttribute="width" secondItem="LTi-pS-nFB" secondAttribute="width" id="sNn-0G-KRE"/>
                             <constraint firstItem="LTI-27-4bn" firstAttribute="centerY" secondItem="LTi-pS-nFB" secondAttribute="centerY" id="v66-Ko-4Ha"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="gHI-GA-NjH"/>
                     </view>
                     <connections>
                         <outlet property="eventsTable" destination="5hI-zX-76J" id="hDy-tw-2YY"/>
@@ -67,7 +67,7 @@
         <!--Main Tab Bar View Controller-->
         <scene sceneID="djy-Ka-IMA">
             <objects>
-                <tabBarController id="vFY-Ie-dA7" customClass="MainTabBarViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="vFY-Ie-dA7" customClass="MainTabBarViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="klf-rp-hYS"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="WUv-Be-dcN">
@@ -78,8 +78,8 @@
                     <connections>
                         <segue destination="PgR-sB-d7G" kind="relationship" relationship="viewControllers" id="ync-Dd-Ovi"/>
                         <segue destination="2iG-px-jKh" kind="relationship" relationship="viewControllers" id="D70-W3-Kh3"/>
+                        <segue destination="rE4-zQ-F9E" kind="relationship" relationship="viewControllers" id="ftG-Dg-OUQ"/>
                         <segue destination="f3M-Kk-0Fr" kind="relationship" relationship="viewControllers" id="S6i-id-x9p"/>
-                        <segue destination="7DG-ad-dxc" kind="relationship" relationship="viewControllers" id="MHY-AU-7Ns"/>
                         <segue destination="PXh-Tj-uNR" kind="relationship" relationship="viewControllers" id="cpx-rY-iTS"/>
                     </connections>
                 </tabBarController>
@@ -90,8 +90,8 @@
         <!--Checkin Card View Controller-->
         <scene sceneID="SiN-EJ-8ci">
             <objects>
-                <viewController storyboardIdentifier="CheckinCardReuseView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V6X-cZ-B0h" customClass="CheckinCardViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CVw-Vr-a5B" customClass="CheckinCardView" customModule="OPass" customModuleProvider="target">
+                <viewController storyboardIdentifier="CheckinCardReuseView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V6X-cZ-B0h" customClass="CheckinCardViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CVw-Vr-a5B" customClass="CheckinCardView" customModule="TCCF" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="420" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -145,7 +145,7 @@
                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPS-iQ-rbE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPS-iQ-rbE">
                                 <rect key="frame" x="80" y="509" width="260" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="hjM-3v-dKt"/>
@@ -157,6 +157,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="CiG-wV-kJb"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="HPS-iQ-rbE" secondAttribute="bottom" constant="45" id="3C5-6M-RX3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Uyl-BJ-dF0" secondAttribute="trailing" constant="15" id="4XE-Wm-053"/>
@@ -169,7 +170,6 @@
                             <constraint firstItem="KUP-DK-ov7" firstAttribute="leading" secondItem="CiG-wV-kJb" secondAttribute="leading" constant="60" id="k5g-lf-JW6"/>
                             <constraint firstItem="CiG-wV-kJb" firstAttribute="trailing" secondItem="KUP-DK-ov7" secondAttribute="trailing" constant="60" id="ksw-mE-Pi8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="CiG-wV-kJb"/>
                         <connections>
                             <outlet property="checkinBtn" destination="HPS-iQ-rbE" id="mqI-VZ-lmI"/>
                             <outlet property="checkinDate" destination="q04-AM-eVF" id="E1Q-UG-OJP"/>
@@ -197,7 +197,7 @@
         <!--Checkin-->
         <scene sceneID="cs7-eR-RBx">
             <objects>
-                <navigationController id="PgR-sB-d7G" customClass="MainNavViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="PgR-sB-d7G" customClass="MainNavViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Checkin" image="AssetsUI.bundle/icon_ios_pin.png" id="0RH-c0-HTe"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5Ap-Be-8PP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -234,7 +234,7 @@
         <!--Session-->
         <scene sceneID="w4n-xs-pWJ">
             <objects>
-                <navigationController id="2iG-px-jKh" customClass="MainNavViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="2iG-px-jKh" customClass="MainNavViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Session" image="AssetsUI.bundle/icon_ios_topcharts.png" id="s9e-mH-WEn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="geD-Aj-Nie">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -251,7 +251,7 @@
         <!--More-->
         <scene sceneID="0Dy-uW-8fb">
             <objects>
-                <navigationController id="PXh-Tj-uNR" customClass="MainNavViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="PXh-Tj-uNR" customClass="MainNavViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="More" image="AssetsUI.bundle/icon_ios_more.png" id="X9A-yE-P7Z"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VT9-lH-fKX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -268,7 +268,7 @@
         <!--Announce-->
         <scene sceneID="wiL-UG-e7W">
             <objects>
-                <navigationController id="f3M-Kk-0Fr" customClass="MainNavViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="f3M-Kk-0Fr" customClass="MainNavViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Announce" image="AssetsUI.bundle/icon_ios_bell.png" id="fAF-SI-dED"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="31P-wZ-JcS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -284,23 +284,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="082-iz-ICZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="766" y="165"/>
-        </scene>
-        <!--IRC-->
-        <scene sceneID="ruP-wo-OxI">
-            <objects>
-                <navigationController id="7DG-ad-dxc" customClass="MainNavViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="IRC" image="AssetsUI.bundle/icon_ios_chat.png" id="qtD-2E-7uu"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0av-oL-WCV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="ZNq-4d-C62" kind="relationship" relationship="rootViewController" id="2Ue-ch-XTY"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RVN-MH-gSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1419" y="165"/>
         </scene>
         <!--Checkin-->
         <scene sceneID="Twu-xm-g6f">
@@ -322,23 +305,39 @@
             </objects>
             <point key="canvasLocation" x="766" y="684"/>
         </scene>
-        <!--IRC-->
-        <scene sceneID="4zl-Cz-caf">
+        <!--Session1-->
+        <scene sceneID="hOM-eg-kWu">
             <objects>
-                <viewControllerPlaceholder storyboardName="IRC" id="ZNq-4d-C62" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="KFt-Gc-sz7"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IEG-lr-Hms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="rE4-zQ-F9E" customClass="MainNavViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Session1" image="AssetsUI.bundle/icon_ios_topcharts.png" id="PNT-R8-3FJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="PnG-kp-opW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nOe-U5-G2z" kind="relationship" relationship="rootViewController" id="ea1-6O-og2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJY-I7-Ijk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1419" y="684"/>
+            <point key="canvasLocation" x="1417" y="165"/>
+        </scene>
+        <!--Session-->
+        <scene sceneID="HXl-WM-bNR">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Session1" storyboardName="Session" id="nOe-U5-G2z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GZZ-ZN-2gn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBv-ez-QDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1416" y="684"/>
         </scene>
     </scenes>
     <resources>
         <image name="AssetsUI.bundle/icon_ios_bell.png" width="16" height="16"/>
-        <image name="AssetsUI.bundle/icon_ios_chat.png" width="16" height="16"/>
         <image name="AssetsUI.bundle/icon_ios_more.png" width="16" height="16"/>
         <image name="AssetsUI.bundle/icon_ios_pin.png" width="16" height="16"/>
         <image name="AssetsUI.bundle/icon_ios_topcharts.png" width="16" height="16"/>
-        <image name="LaunchScreen.png" width="375" height="811"/>
+        <image name="LaunchScreen.png" width="1125.3599853515625" height="2433.1201171875"/>
     </resources>
 </document>

@@ -112,15 +112,21 @@ class OPassAPI: NSObject {
                 if !item.isEnabled {
                     tabNeedRemove.append(1)
                 }
-            case "Announce", OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.DisplayText[Constants.shortLangUI]:
-                item.title = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.DisplayText[Constants.shortLangUI]
-                item.isEnabled = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.Url != nil
+            case "Session1", OPassAPI.eventInfo?.Features[OPassKnownFeatures.Schedule1]?.DisplayText[Constants.shortLangUI]:
+                item.title = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Schedule1]?.DisplayText[Constants.shortLangUI]
+                item.accessibilityValue = String(describing: OPassKnownFeatures.Schedule1)
+                item.isEnabled = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Schedule1]?.Url != nil
+                if item.isEnabled && ((OPassAPI.userInfo?.Role ?? "").count > 0) {
+                    if let role = OPassAPI.userInfo?.Role {
+                        item.isEnabled = (OPassAPI.eventInfo?.Features[OPassKnownFeatures.Schedule1]?.VisibleRoles?.contains(role)) ?? true
+                    }
+                }
                 if !item.isEnabled {
                     tabNeedRemove.append(2)
                 }
-            case "IRC", OPassAPI.eventInfo?.Features[OPassKnownFeatures.IM]?.DisplayText[Constants.shortLangUI]:
-                item.title = OPassAPI.eventInfo?.Features[OPassKnownFeatures.IM]?.DisplayText[Constants.shortLangUI]
-                item.isEnabled = OPassAPI.eventInfo?.Features[OPassKnownFeatures.IM]?.Url != nil
+            case "Announce", OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.DisplayText[Constants.shortLangUI]:
+                item.title = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.DisplayText[Constants.shortLangUI]
+                item.isEnabled = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.Url != nil
                 if !item.isEnabled {
                     tabNeedRemove.append(3)
                 }
