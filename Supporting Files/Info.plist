@@ -33,8 +33,7 @@
 	<string>$(MAIN_BUILD_VERSION)</string>
 	<key>FirebaseDynamicLinksCustomDomains</key>
 	<array>
-		<string>https://dl.opass.app</string>
-		<string>https://opass.page.link</string>
+		<string>https://tccf-app.web.app</string>
 	</array>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
