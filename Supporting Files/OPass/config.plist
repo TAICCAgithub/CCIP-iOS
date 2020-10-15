@@ -53,7 +53,7 @@
 			<key>MessageButtonLeftColor</key>
 			<string>#ff3a1e</string>
 			<key>MessageButtonRightColor</key>
-			<string>#532875</string>
+			<string>#ff3a1e</string>
 			<key>NavigationIndicatorColor</key>
 			<string>#ffffff</string>
 			<key>ProgressBarColor</key>
@@ -63,7 +63,7 @@
 			<key>LabelTextColor</key>
 			<string>#ffffff</string>
 			<key>CardTextColor</key>
-			<string>#4d256f</string>
+			<string>#000000</string>
 			<key>FavoriteButtonColor</key>
 			<string>#ff3a1e</string>
 			<key>CheckinRectangleLeftColor</key>
