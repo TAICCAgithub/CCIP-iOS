@@ -29,7 +29,7 @@
 			<key>DevelopingLogoMaskColor</key>
 			<string>#f2a900</string>
 			<key>EventSwitcherButtonColor</key>
-			<string>#682e8e</string>
+			<string>#000000</string>
 			<key>EventSwitcherTextColor</key>
 			<string>#ffffff</string>
 			<key>RedeemButtonLeftColor</key>
