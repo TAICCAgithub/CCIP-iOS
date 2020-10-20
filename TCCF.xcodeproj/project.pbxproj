@@ -101,6 +101,7 @@
 		6B9A279E2231715600E8463E /* OPassAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A279D2231715500E8463E /* OPassAPI.swift */; };
 		6B9B24D722C8BA1D007C41A9 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B24D622C8BA1D007C41A9 /* NotificationService.swift */; };
 		6B9B24DB22C8BA1D007C41A9 /* TCCF Notification Service.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6B9B24D422C8BA1D007C41A9 /* TCCF Notification Service.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6BB0ABCB253F0D7000FA03B4 /* PassAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6BB0ABC7253F0CCB00FA03B4 /* PassAssets.bundle */; };
 		6BB1C4391F1AD4BB00AB072F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD8EF391D1D73510094BE95 /* Assets.xcassets */; };
 		6BB97F9C222A813200338138 /* PartnerWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB97F9B222A813200338138 /* PartnerWebViewController.swift */; };
 		6BBAE47F22B67D1C003CBC57 /* CheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBAE47E22B67D1C003CBC57 /* CheckinViewController.swift */; };
@@ -295,6 +296,7 @@
 		6B9B24D422C8BA1D007C41A9 /* TCCF Notification Service.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TCCF Notification Service.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9B24D622C8BA1D007C41A9 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		6B9B24D822C8BA1D007C41A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BB0ABC7253F0CCB00FA03B4 /* PassAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PassAssets.bundle; sourceTree = "<group>"; };
 		6BB0B6091F1A74DF00AEB437 /* TCCF.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCCF.entitlements; sourceTree = "<group>"; };
 		6BB55CAB1F242EC7007BC840 /* TCCF-Build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "TCCF-Build.sh"; sourceTree = "<group>"; };
 		6BB97F9B222A813200338138 /* PartnerWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerWebViewController.swift; sourceTree = "<group>"; };
@@ -471,6 +473,7 @@
 				6B2CD5971D2886C900793194 /* Localizable.strings */,
 				6B036B8F1F24371600D5E5A5 /* Settings.bundle */,
 				6BF331511F299207004BEEA6 /* AssetsUI.bundle */,
+				6BB0ABC7253F0CCB00FA03B4 /* PassAssets.bundle */,
 				6B4D940E24F803EB00F8D0BD /* WebViewAssets.bundle */,
 				5F67CE171D1EB54200B9DAA9 /* GoogleService-Info.plist */,
 				284602DD1F121BBB00F512A3 /* LaunchScreen@1x.png */,
@@ -894,6 +897,7 @@
 				284602E11F121BBB00F512A3 /* LaunchScreen@2x.png in Resources */,
 				4F5E01AC22FD655500D0D4E8 /* Announce.storyboard in Resources */,
 				280774D21F1AD8D300A5B994 /* SessionTableViewCell.xib in Resources */,
+				6BB0ABCB253F0D7000FA03B4 /* PassAssets.bundle in Resources */,
 				288D3A7B1D599AE000E4E3A6 /* ScanditBarcodeScanner.bundle in Resources */,
 				6B4D940F24F803EB00F8D0BD /* WebViewAssets.bundle in Resources */,
 				6B5C3EC822AC2EFC002B7982 /* LaunchScreen.storyboard in Resources */,
