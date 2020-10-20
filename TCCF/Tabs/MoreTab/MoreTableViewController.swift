@@ -108,9 +108,9 @@ class MoreTableViewController: UIViewController, UITableViewDelegate, UITableVie
             }
         }
         self.moreItems = ((features ?? [["", nil]]) + [
-            [ACKNOWLEDGEMENTS, nil]
+            // [ACKNOWLEDGEMENTS, nil]
         ] + (
-            Constants.isDevMode ? [[INTERNAL_CONFIG, nil]] : []
+            [] // Constants.isDevMode ? [[INTERNAL_CONFIG, nil]] : []
         )).filter {
             guard let v = $0[0] else { return false }
             guard let s = v as? String else { return false }
