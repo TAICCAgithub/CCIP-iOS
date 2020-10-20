@@ -34,6 +34,7 @@
 	<key>FirebaseDynamicLinksCustomDomains</key>
 	<array>
 		<string>https://tccf-app.web.app</string>
+		<string>https://taicca.page.link</string>
 	</array>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
