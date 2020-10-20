@@ -56,19 +56,19 @@ class MoreTableViewController: UIViewController, UITableViewDelegate, UITableVie
 
         Constants.SendFib("MoreTableViewController")
 
-        if self.switchEventButton == nil {
-            let attribute = [
-                NSAttributedString.Key.font: UIFont.fontAwesome(ofSize: 20, style: .solid)
-            ]
-            self.switchEventButton = UIBarButtonItem.init(title: "", style: .plain, target: self, action: #selector(CallSwitchEventView))
-            self.switchEventButton?.setTitleTextAttributes(attribute, for: .normal)
-            self.switchEventButton?.title = String.fontAwesomeIcon(code: "fa-sign-out-alt")
-        }
-
-        self.navigationItem.rightBarButtonItem = self.switchEventButton
-
-        let emptyButton = UIBarButtonItem.init(title: "　", style: .plain, target: nil, action: nil)
-        self.navigationItem.leftBarButtonItem = emptyButton;
+//        if self.switchEventButton == nil {
+//            let attribute = [
+//                NSAttributedString.Key.font: UIFont.fontAwesome(ofSize: 20, style: .solid)
+//            ]
+//            self.switchEventButton = UIBarButtonItem.init(title: "", style: .plain, target: self, action: #selector(CallSwitchEventView))
+//            self.switchEventButton?.setTitleTextAttributes(attribute, for: .normal)
+//            self.switchEventButton?.title = String.fontAwesomeIcon(code: "fa-sign-out-alt")
+//        }
+//
+//        self.navigationItem.rightBarButtonItem = self.switchEventButton
+//
+//        let emptyButton = UIBarButtonItem.init(title: "　", style: .plain, target: nil, action: nil)
+//        self.navigationItem.leftBarButtonItem = emptyButton;
     }
 
     override func viewDidAppear(_ animated: Bool) {
