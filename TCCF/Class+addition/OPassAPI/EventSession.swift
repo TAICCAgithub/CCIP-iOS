@@ -255,23 +255,24 @@ extension OPassAPI {
 
     static func GetFavoritesList(_ event: String, _ token: String) -> [String] {
         // dirty hack start
+        var registeredList: [String] = []
         if let favList = OPassAPI.userInfo?._data["registered"].arrayObject as? [String] {
-            return favList
+            registeredList = favList
         }
         // dirty hack end
         let key = OPassAPI.GetFavoritesStoreKey(event, token)
         if let favoritesList = self.favoritesLists[key] {
-            return favoritesList
+            return favoritesList + registeredList
         }
         if let favData = UICKeyChainStore.string(forKey: key) {
             if let favList = JSON(parseJSON: favData).object as? [String] {
                 self.favoritesLists[key] = favList
-                return favList
+                return favList + registeredList
             }
         }
         self.favoritesLists[key] = []
         UICKeyChainStore.setString("[]", forKey: key)
-        return []
+        return [] + registeredList
     }
 
     static func PutFavoritesList(_ event: String, _ token: String, _ newList: [String]) {
