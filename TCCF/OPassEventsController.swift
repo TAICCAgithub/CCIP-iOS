@@ -23,6 +23,7 @@ class OPassEventsController: UIViewController, UITableViewDelegate, UITableViewD
         self.progress = MBProgressHUD.showAdded(to: self.view, animated: true)
         self.progress.removeFromSuperViewOnHide = false
         self.progress.mode = .indeterminate
+        self.eventsTable.isHidden = true
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
