@@ -30,12 +30,16 @@ class GuideViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
         // Do any additional setup after loading the view.
         guideMessageLabel.text = NSLocalizedString("GuideViewMessage", comment: "")
 
+        guideLineLabel.isHidden = true
+
         redeemCodeText.textColor = Constants.appConfigColor.RedeemCodeTextColor
+        redeemCodeText.isHidden = true
 
         redeemButton.setTitle(NSLocalizedString("GuideViewButton", comment: ""), for: .normal)
         redeemButton.tintColor = .white
         redeemButton.backgroundColor = UIColor(red: 61 / 255.0, green: 152 / 255.0, blue: 60 / 255.0, alpha: 1)
         redeemButton.layer.cornerRadius = 7
+        redeemButton.isHidden = true
 
         // Set carousel background linear diagonal gradient
         //   Create the colors
