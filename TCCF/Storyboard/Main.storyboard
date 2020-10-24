@@ -79,6 +79,7 @@
                         <segue destination="PgR-sB-d7G" kind="relationship" relationship="viewControllers" id="ync-Dd-Ovi"/>
                         <segue destination="2iG-px-jKh" kind="relationship" relationship="viewControllers" id="D70-W3-Kh3"/>
                         <segue destination="rE4-zQ-F9E" kind="relationship" relationship="viewControllers" id="ftG-Dg-OUQ"/>
+                        <segue destination="f3M-Kk-0Fr" kind="relationship" relationship="viewControllers" id="S6i-id-x9p"/>
                         <segue destination="PXh-Tj-uNR" kind="relationship" relationship="viewControllers" id="cpx-rY-iTS"/>
                     </connections>
                 </tabBarController>
@@ -264,6 +265,26 @@
             </objects>
             <point key="canvasLocation" x="2081" y="165"/>
         </scene>
+        <!--Announce-->
+        <scene sceneID="wiL-UG-e7W">
+            <objects>
+                <navigationController id="f3M-Kk-0Fr" customClass="MainNavViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Announce" image="AssetsUI.bundle/icon_ios_bell.png" id="fAF-SI-dED"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="31P-wZ-JcS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ljK-W6-vXa">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="wCM-nY-fGK" kind="relationship" relationship="rootViewController" id="jR1-JH-KHP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="082-iz-ICZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="165"/>
+        </scene>
         <!--Checkin-->
         <scene sceneID="Twu-xm-g6f">
             <objects>
@@ -273,6 +294,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uz4-EX-kh0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-520" y="684"/>
+        </scene>
+        <!--Announce-->
+        <scene sceneID="BJv-eu-Z8h">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Announce" id="wCM-nY-fGK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yJM-go-nxE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5g4-sK-ojH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="684"/>
         </scene>
         <!--Session1-->
         <scene sceneID="hOM-eg-kWu">
@@ -303,6 +334,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AssetsUI.bundle/icon_ios_bell.png" width="16" height="16"/>
         <image name="AssetsUI.bundle/icon_ios_more.png" width="16" height="16"/>
         <image name="AssetsUI.bundle/icon_ios_pin.png" width="16" height="16"/>
         <image name="AssetsUI.bundle/icon_ios_topcharts.png" width="16" height="16"/>
