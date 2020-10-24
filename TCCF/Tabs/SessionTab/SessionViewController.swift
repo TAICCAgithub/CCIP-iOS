@@ -33,15 +33,15 @@ class SessionViewController: UIViewController {
         self.navigationController?.navigationBar.backgroundColor = .clear
 
         // Create Favorite button
-//        let title_Favorites = Constants.attributedFontAwesome(ofCode: "fa-heart", withSize: 20, inStyle: .solid, forColor: .white)
-//
-//        let uiButton_Favorites = UIButton.init()
-//        uiButton_Favorites.setAttributedTitle(title_Favorites, for: .normal)
-//        uiButton_Favorites.addTarget(self, action: #selector(showFavoritesTouchDown), for: .touchDown)
-//        uiButton_Favorites.addTarget(self, action: #selector(showFavoritesTouchUpInside), for: .touchUpInside)
-//        uiButton_Favorites.addTarget(self, action: #selector(showFavoritesTouchUpOutside), for: .touchUpOutside)
-//        uiButton_Favorites.sizeToFit()
-//        let uiBarButton_Favorites = UIBarButtonItem.init(customView: uiButton_Favorites)
+        let title_Favorites = Constants.attributedFontAwesome(ofCode: "fa-heart", withSize: 20, inStyle: .solid, forColor: .white)
+
+        let uiButton_Favorites = UIButton.init()
+        uiButton_Favorites.setAttributedTitle(title_Favorites, for: .normal)
+        uiButton_Favorites.addTarget(self, action: #selector(showFavoritesTouchDown), for: .touchDown)
+        uiButton_Favorites.addTarget(self, action: #selector(showFavoritesTouchUpInside), for: .touchUpInside)
+        uiButton_Favorites.addTarget(self, action: #selector(showFavoritesTouchUpOutside), for: .touchUpOutside)
+        uiButton_Favorites.sizeToFit()
+        let uiBarButton_Favorites = UIBarButtonItem.init(customView: uiButton_Favorites)
 
         // Create Search button
         let title_Search = Constants.attributedFontAwesome(ofCode: "fa-search", withSize: 20, inStyle: .solid, forColor: .white)
@@ -63,8 +63,8 @@ class SessionViewController: UIViewController {
         let uiBarButton_Fake = UIBarButtonItem.init(customView: uiButton_Fake)
 
         // Set Navigation Buttons
-        self.navigationItem.setRightBarButtonItems([/*uiBarButton_Favorites, */uiBarButton_Search], animated: true)
-        self.navigationItem.setLeftBarButtonItems([/*uiBarButton_Fake, */uiBarButton_Fake], animated: true)
+        self.navigationItem.setRightBarButtonItems([uiBarButton_Favorites, uiBarButton_Search], animated: true)
+        self.navigationItem.setLeftBarButtonItems([uiBarButton_Fake, uiBarButton_Fake], animated: true)
 
         let frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 239)
         let headView = UIView.init(frame: frame)
