@@ -15,6 +15,7 @@ enum OPassKnownFeatures: String {
     case FastPass = "fastpass"
     case Schedule = "schedule"
     case Schedule1 = "schedule1"
+    case Schedule2 = "schedule2"
     case Announcement = "announcement"
     case Puzzle = "puzzle"
     case Ticket = "ticket"

@@ -105,6 +105,7 @@
 "BeaconWelcomeMessage_Out_Title" = "感謝您參加本次大會";
 "BeaconWelcomeMessage_Out_Content" = "";
 
+"icon-Announcement" = "fas fa-puzzle-piece";
 "icon-Puzzle" = "fas fa-puzzle-piece";
 "icon-Ticket" = "fas fa-ticket-alt";
 "icon-Telegram" = "fab fa-telegram-plane";

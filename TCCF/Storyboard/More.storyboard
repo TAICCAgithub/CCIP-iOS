@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JPa-iH-gLa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JPa-iH-gLa">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +11,7 @@
         <!--More-->
         <scene sceneID="JWz-OO-EbF">
             <objects>
-                <viewController storyboardIdentifier="More" id="JPa-iH-gLa" userLabel="More" customClass="MoreTableViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="More" id="JPa-iH-gLa" userLabel="More" customClass="MoreTableViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eqo-6U-XiW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -19,12 +20,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="Vy3-h3-U3W">
-                                    <rect key="frame" x="0.0" y="540" width="414" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="584" width="414" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puzzle" id="MRV-xV-5fU" customClass="MoreCell" customModule="OPass" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Announcement" id="MRV-xV-5fU" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MRV-xV-5fU" id="1Au-g3-JmS">
@@ -32,11 +33,22 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="8S1-G1-xuU" kind="show" id="w2w-Wg-LvR"/>
+                                            <segue destination="ciT-9T-cNB" kind="show" id="ME5-85-Yse"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Ticket" id="z8g-bI-gB8" customClass="MoreCell" customModule="OPass" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puzzle" id="3Gw-Ne-zCR" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Gw-Ne-zCR" id="ZBT-H2-Qgx">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8S1-G1-xuU" kind="show" id="Reb-pL-HYt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Ticket" id="z8g-bI-gB8" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="116" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z8g-bI-gB8" id="2BP-1D-Nc4">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -46,8 +58,8 @@
                                             <segue destination="Z9r-eB-0uD" kind="show" id="U7T-e8-WVn"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Telegram" id="Kpp-8P-Mds" customClass="MoreCell" customModule="OPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="116" width="414" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Telegram" id="Kpp-8P-Mds" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="160" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kpp-8P-Mds" id="JjO-RD-bmI">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -57,16 +69,16 @@
                                             <segue destination="DBn-ZL-Z09" kind="show" id="OTn-Rz-aXt"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WiFiConnect" id="LVo-NH-D4H" customClass="MoreCell" customModule="OPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="160" width="414" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WiFiConnect" id="LVo-NH-D4H" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="204" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LVo-NH-D4H" id="YW9-91-PEP">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VenueWeb" id="D91-Rd-LYS" customClass="MoreCell" customModule="OPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="204" width="414" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VenueWeb" id="D91-Rd-LYS" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="248" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D91-Rd-LYS" id="Y1s-9V-cdy">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -76,8 +88,8 @@
                                             <segue destination="ZB3-yk-XBO" kind="show" id="jhh-tW-YWx"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaffsWeb" id="GXt-cJ-yb8" customClass="MoreCell" customModule="OPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="248" width="414" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaffsWeb" id="GXt-cJ-yb8" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="292" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GXt-cJ-yb8" id="6BE-Rc-kMQ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -87,8 +99,8 @@
                                             <segue destination="jeD-Gb-Rnv" kind="show" id="aM4-ai-eSI"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SponsorsWeb" id="yF3-OK-Tre" customClass="MoreCell" customModule="OPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="292" width="414" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SponsorsWeb" id="yF3-OK-Tre" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="336" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yF3-OK-Tre" id="ofA-O3-WYa">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -98,8 +110,8 @@
                                             <segue destination="9X9-rL-dnd" kind="show" id="Efh-na-oQe"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartnersWeb" id="xPb-ag-6hB" customClass="MoreCell" customModule="OPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="336" width="414" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartnersWeb" id="xPb-ag-6hB" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="380" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xPb-ag-6hB" id="B0o-oH-eUg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -109,16 +121,16 @@
                                             <segue destination="XGh-7S-2Rf" kind="show" id="Sn6-u7-oNV"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoreWeb" id="D48-jI-vUP" customClass="MoreCell" customModule="OPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="380" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoreWeb" id="D48-jI-vUP" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="424" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D48-jI-vUP" id="WrE-0t-m2I">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Acknowledgements" id="WcG-Xj-Hfn" customClass="MoreCell" customModule="OPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="424" width="414" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Acknowledgements" id="WcG-Xj-Hfn" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="468" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WcG-Xj-Hfn" id="yyt-ri-RJr">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -128,8 +140,8 @@
                                             <segue destination="eci-Bq-6O9" kind="show" id="2WE-ih-2MW"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InternalConfig" id="RVc-2e-pI2" customClass="MoreCell" customModule="OPass" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="468" width="414" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InternalConfig" id="RVc-2e-pI2" customClass="MoreCell" customModule="TCCF" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="512" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RVc-2e-pI2" id="YGS-qC-8sq">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -146,6 +158,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q35-Ni-C1V"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Q35-Ni-C1V" firstAttribute="trailing" secondItem="4FP-vb-AJC" secondAttribute="trailing" id="VWs-NU-9fa"/>
@@ -153,7 +166,6 @@
                             <constraint firstItem="4FP-vb-AJC" firstAttribute="top" secondItem="Q35-Ni-C1V" secondAttribute="top" id="vgt-Zh-Bfn"/>
                             <constraint firstItem="4FP-vb-AJC" firstAttribute="leading" secondItem="Q35-Ni-C1V" secondAttribute="leading" id="wbm-Ef-Ffx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Q35-Ni-C1V"/>
                     </view>
                     <navigationItem key="navigationItem" id="bkS-ON-3TE"/>
                     <connections>
@@ -167,12 +179,12 @@
         <!--Staff Web View Controller-->
         <scene sceneID="FOz-fq-0J4">
             <objects>
-                <viewController id="jeD-Gb-Rnv" customClass="StaffWebViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jeD-Gb-Rnv" customClass="StaffWebViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Jko-me-ghw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="x6r-xT-vuK"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="x85-8i-tmZ">
                         <barButtonItem key="rightBarButtonItem" image="WebViewAssets.bundle/BarButton-Reload.png" id="Did-7m-EXO">
@@ -192,12 +204,12 @@
         <!--Telegram Controller-->
         <scene sceneID="wtK-By-oWV">
             <objects>
-                <viewController id="DBn-ZL-Z09" customClass="TelegramController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DBn-ZL-Z09" customClass="TelegramController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2R6-nQ-cRw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1cB-x2-C7h"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="9as-Nc-LVm">
                         <barButtonItem key="rightBarButtonItem" image="WebViewAssets.bundle/BarButton-Reload.png" id="oOi-1k-9fK">
@@ -217,7 +229,7 @@
         <!--My Ticket View Controller-->
         <scene sceneID="GWR-Vj-jfd">
             <objects>
-                <viewController id="Z9r-eB-0uD" customClass="MyTicketViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Z9r-eB-0uD" customClass="MyTicketViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zv8-IX-skS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -237,7 +249,7 @@
                                             <constraint firstAttribute="width" secondItem="pgR-N6-O8I" secondAttribute="height" multiplier="1:1" id="KIg-FL-LON"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoS-us-FGi">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoS-us-FGi">
                                         <rect key="frame" x="254" y="656" width="100" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="XuD-1t-HFb"/>
@@ -267,6 +279,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="8AG-m0-j8j"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gyd-P0-Jtp" firstAttribute="trailing" secondItem="Zv8-IX-skS" secondAttribute="trailingMargin" id="3Zf-rH-nHr"/>
@@ -274,7 +287,6 @@
                             <constraint firstItem="gyd-P0-Jtp" firstAttribute="leading" secondItem="Zv8-IX-skS" secondAttribute="leadingMargin" id="Xs9-eo-JKU"/>
                             <constraint firstItem="8AG-m0-j8j" firstAttribute="bottom" secondItem="gyd-P0-Jtp" secondAttribute="bottom" id="cc1-H5-tGl"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="8AG-m0-j8j"/>
                     </view>
                     <connections>
                         <outlet property="btnLogout" destination="AoS-us-FGi" id="lgl-VO-0dG"/>
@@ -300,12 +312,12 @@
         <!--Acknowledgements View Controller-->
         <scene sceneID="KU7-LC-zhu">
             <objects>
-                <viewController id="eci-Bq-6O9" customClass="AcknowledgementsViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eci-Bq-6O9" customClass="AcknowledgementsViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="imM-2I-Lqn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="tna-Vb-bOF"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3N-Sk-uuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -315,12 +327,12 @@
         <!--Puzzle View Controller-->
         <scene sceneID="9Lr-fv-Xx8">
             <objects>
-                <viewController id="8S1-G1-xuU" customClass="PuzzleViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8S1-G1-xuU" customClass="PuzzleViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WCP-a0-X3p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ZUT-ii-aqy"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="5OE-mE-cEs">
                         <barButtonItem key="rightBarButtonItem" image="WebViewAssets.bundle/BarButton-Reload.png" id="2mf-JZ-Jab">
@@ -340,12 +352,12 @@
         <!--Sponsor Web View Controller-->
         <scene sceneID="GmC-4T-zKa">
             <objects>
-                <viewController id="9X9-rL-dnd" customClass="SponsorWebViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9X9-rL-dnd" customClass="SponsorWebViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Idw-zd-zrE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="L9j-6h-FCR"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="peJ-Ru-bO8">
                         <barButtonItem key="rightBarButtonItem" image="WebViewAssets.bundle/BarButton-Reload.png" id="YsN-3E-pZ1">
@@ -365,12 +377,12 @@
         <!--Venue Web View Controller-->
         <scene sceneID="Ric-7t-8DI">
             <objects>
-                <viewController id="ZB3-yk-XBO" customClass="VenueWebViewController" customModule="OPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZB3-yk-XBO" customClass="VenueWebViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9tc-3O-745">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tVl-Y9-XUM"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="lPg-El-WKo">
                         <barButtonItem key="rightBarButtonItem" image="WebViewAssets.bundle/BarButton-Reload.png" id="qUm-B5-2J5">
@@ -394,8 +406,8 @@
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4ht-fC-gLZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Qpe-Yc-fjM"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="GKQ-kq-P9G">
                         <barButtonItem key="rightBarButtonItem" image="WebViewAssets.bundle/BarButton-Reload.png" id="bq7-NB-3El">
@@ -411,6 +423,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Od-ng-nTD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2080" y="1965"/>
+        </scene>
+        <!--Announce-->
+        <scene sceneID="gnk-6C-4AT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Announce" id="ciT-9T-cNB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EBW-Jh-ugI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRk-mI-bdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="1346"/>
         </scene>
         <!--Hosting Controller-->
         <scene sceneID="577-kv-ler">

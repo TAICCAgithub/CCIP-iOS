@@ -30,29 +30,29 @@ class AnnounceTableViewController: UIViewController, InvalidNetworkRetryDelegate
         self.refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         self.announceTableView.addSubview(self.refreshControl)
 
-        self.navigationItem.title = NSLocalizedString("AnnouncementTitle", comment: "")
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage.init()
-        self.navigationController?.navigationBar.backgroundColor = UIColor.clear
-        let frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 239)
-        let headView = UIView.init(frame: frame)
-        headView.setGradientColor(
-            from: Constants.appConfigColor.AnnouncementTitleLeftColor,
-            to: Constants.appConfigColor.AnnouncementTitleRightColor,
-            startPoint: CGPoint(x: -0.4, y: -0.5),
-            toPoint: CGPoint(x: 1, y: 0.5)
-        )
-        self.view.addSubview(headView)
-        self.view.sendSubviewToBack(headView)
-
-        let noAnnouncementText = NSLocalizedString("NoAnnouncementText", comment: "")
-        let attributedNoAnnouncementText = NSMutableAttributedString.init(string: noAnnouncementText)
-        attributedNoAnnouncementText.addAttributes(
-            [ NSAttributedString.Key.kern: 5.0 ],
-            range: NSRange(location: 0, length: noAnnouncementText.count)
-        )
-        self.lbNoAnnouncement.attributedText = attributedNoAnnouncementText
-        self.lbNoAnnouncement.textColor = Constants.appConfigColor.AnnouncementNoContentTextColor
+//        self.navigationItem.title = NSLocalizedString("AnnouncementTitle", comment: "")
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage.init()
+//        self.navigationController?.navigationBar.backgroundColor = UIColor.clear
+//        let frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 239)
+//        let headView = UIView.init(frame: frame)
+//        headView.setGradientColor(
+//            from: Constants.appConfigColor.AnnouncementTitleLeftColor,
+//            to: Constants.appConfigColor.AnnouncementTitleRightColor,
+//            startPoint: CGPoint(x: -0.4, y: -0.5),
+//            toPoint: CGPoint(x: 1, y: 0.5)
+//        )
+//        self.view.addSubview(headView)
+//        self.view.sendSubviewToBack(headView)
+//
+//        let noAnnouncementText = NSLocalizedString("NoAnnouncementText", comment: "")
+//        let attributedNoAnnouncementText = NSMutableAttributedString.init(string: noAnnouncementText)
+//        attributedNoAnnouncementText.addAttributes(
+//            [ NSAttributedString.Key.kern: 5.0 ],
+//            range: NSRange(location: 0, length: noAnnouncementText.count)
+//        )
+//        self.lbNoAnnouncement.attributedText = attributedNoAnnouncementText
+//        self.lbNoAnnouncement.textColor = Constants.appConfigColor.AnnouncementNoContentTextColor
 
         Constants.SendFib("AnnounceTableViewController")
     }

@@ -124,12 +124,24 @@ class OPassAPI: NSObject {
                 if !item.isEnabled {
                     tabNeedRemove.append(2)
                 }
-            case "Announce", OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.DisplayText[Constants.shortLangUI]:
-                item.title = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.DisplayText[Constants.shortLangUI]
-                item.isEnabled = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.Url != nil
+            case "Session2", OPassAPI.eventInfo?.Features[OPassKnownFeatures.Schedule2]?.DisplayText[Constants.shortLangUI]:
+                item.title = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Schedule2]?.DisplayText[Constants.shortLangUI]
+                item.accessibilityValue = String(describing: OPassKnownFeatures.Schedule2)
+                item.isEnabled = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Schedule2]?.Url != nil
+                if item.isEnabled && ((OPassAPI.userInfo?.Role ?? "").count > 0) {
+                    if let role = OPassAPI.userInfo?.Role {
+                        item.isEnabled = (OPassAPI.eventInfo?.Features[OPassKnownFeatures.Schedule2]?.VisibleRoles?.contains(role)) ?? true
+                    }
+                }
                 if !item.isEnabled {
                     tabNeedRemove.append(3)
                 }
+//            case "Announce", OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.DisplayText[Constants.shortLangUI]:
+//                item.title = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.DisplayText[Constants.shortLangUI]
+//                item.isEnabled = OPassAPI.eventInfo?.Features[OPassKnownFeatures.Announcement]?.Url != nil
+//                if !item.isEnabled {
+//                    tabNeedRemove.append(3)
+//                }
             default:
                 item.title = NSLocalizedString(title, comment: "")
             }

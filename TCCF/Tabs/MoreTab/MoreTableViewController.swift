@@ -85,6 +85,8 @@ class MoreTableViewController: UIViewController, UITableViewDelegate, UITableVie
 
         let features = OPassAPI.eventInfo?.Features.map { feature -> [Any?] in
             switch OPassKnownFeatures(rawValue: feature.Feature) {
+            case Optional(.Announcement):
+                return ["Announcement", feature]
             case Optional(.Puzzle):
                 return ["Puzzle", feature]
             case Optional(.Ticket):

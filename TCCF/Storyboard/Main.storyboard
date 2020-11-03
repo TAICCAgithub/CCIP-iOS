@@ -3,7 +3,7 @@
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -265,11 +265,11 @@
             </objects>
             <point key="canvasLocation" x="2081" y="165"/>
         </scene>
-        <!--Announce-->
+        <!--Session2-->
         <scene sceneID="wiL-UG-e7W">
             <objects>
                 <navigationController id="f3M-Kk-0Fr" customClass="MainNavViewController" customModule="TCCF" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Announce" image="AssetsUI.bundle/icon_ios_bell.png" id="fAF-SI-dED"/>
+                    <tabBarItem key="tabBarItem" title="Session2" image="AssetsUI.bundle/icon_ios_topcharts.png" id="fAF-SI-dED"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="31P-wZ-JcS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -295,10 +295,10 @@
             </objects>
             <point key="canvasLocation" x="-520" y="684"/>
         </scene>
-        <!--Announce-->
+        <!--Session-->
         <scene sceneID="BJv-eu-Z8h">
             <objects>
-                <viewControllerPlaceholder storyboardName="Announce" id="wCM-nY-fGK" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Session" id="wCM-nY-fGK" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="yJM-go-nxE"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5g4-sK-ojH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -334,7 +334,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AssetsUI.bundle/icon_ios_bell.png" width="16" height="16"/>
         <image name="AssetsUI.bundle/icon_ios_more.png" width="16" height="16"/>
         <image name="AssetsUI.bundle/icon_ios_pin.png" width="16" height="16"/>
         <image name="AssetsUI.bundle/icon_ios_topcharts.png" width="16" height="16"/>
