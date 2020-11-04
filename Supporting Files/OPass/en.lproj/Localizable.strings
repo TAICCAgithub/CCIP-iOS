@@ -45,7 +45,7 @@
 "day2lunch" = "Day 2 Lunch";
 "day3lunch" = "Day 3 Lunch";
 "Addition" = "Addition";
-"TicketNotice" = "Please keep your ticket secretly and carefully, only shows for our staff or in booth event";
+"TicketNotice" = "In order to comply with the anti-epidemic policy, this is a QR Code for you to log in with real-name registration. Please provide this ticket to the staff when you enter and exit the TCCF events.";
 "TicketNonExistNotice" = "Your Ticket not import into TCCF, please try again after import !";
 "TicketLogout" = "Logout";
 "TicketLogoutWarning" = "Are you sure logout ?";
