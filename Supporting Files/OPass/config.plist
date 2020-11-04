@@ -9,7 +9,7 @@
 		<key>AcknowledgementsRepo</key>
 		<string>TAICCAgithub/CCIP-iOS</string>
 		<key>PrivacyURL</key>
-		<string>https://opass.app/privacy-policy.html</string>
+		<string>https://taiccagithub.github.io/privacy-policy.html</string>
 		<key>HideContributor</key>
 		<true/>
 		<key>HideLibraries</key>

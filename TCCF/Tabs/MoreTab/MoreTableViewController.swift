@@ -110,7 +110,7 @@ class MoreTableViewController: UIViewController, UITableViewDelegate, UITableVie
             }
         }
         self.moreItems = ((features ?? [["", nil]]) + [
-            // [ACKNOWLEDGEMENTS, nil]
+            [ACKNOWLEDGEMENTS, nil]
         ] + (
             [] // Constants.isDevMode ? [[INTERNAL_CONFIG, nil]] : []
         )).filter {

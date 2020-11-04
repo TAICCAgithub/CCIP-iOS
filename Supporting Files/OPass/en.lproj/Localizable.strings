@@ -50,7 +50,7 @@
 "TicketLogout" = "Logout";
 "TicketLogoutWarning" = "Are you sure logout ?";
 "TicketLogoutWarningDesc" = "You might need rescan QRCode or relogin by link again to use full features for this event.";
-"Acknowledgements" = "About OPass";
+"Acknowledgements" = "About TCCF";
 "About" = "About";
 "AboutPrivacyPolicy" = "Privacy Policy";
 "Contributions" = "Contributors";
