@@ -117,3 +117,5 @@
 "icon-Acknowledgements" = "fas fa-info-circle";
 "icon-MoreWeb" = "fas fa-cookie-bite";
 "icon-InternalConfig" = "fas fa-hammer";
+
+"NoScheduledEventsPopupMessage" = "目前您尚未安排任何活動，歡迎您可以在大會時間內開始安排您喜好的論壇、展演、商務活動...等。";

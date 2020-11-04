@@ -87,7 +87,7 @@ class SessionViewPagerController: ViewPagerController, ViewPagerDataSource, View
     }
 
     func showEmpty() {
-        let markdownStyleString = "您好，您尚未預約任何會議，\n\n內容交易會以台灣原創內容為核心，邀請您探索精彩作品，並與創作者、出版社、版權代表、電視台、影視製作單位、發行商...等進行洽商會議，發展多元的合作機會。\n\n請至：https://cct.taicca.tw/meeting 預約媒合會議。"
+        let markdownStyleString = NSLocalizedString("NoScheduledEventsPopupMessage", comment: "")
         let webConfig = WKWebViewConfiguration()
         webConfig.dataDetectorTypes = [.link]
         let _ = MarkdownView.init(markdownStyleString, toView: self.view, config: webConfig)

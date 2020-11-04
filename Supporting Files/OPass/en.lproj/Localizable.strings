@@ -117,3 +117,5 @@
 "icon-Acknowledgements" = "fas fa-info-circle";
 "icon-MoreWeb" = "fas fa-cookie-bite";
 "icon-InternalConfig" = "fas fa-hammer";
+
+"NoScheduledEventsPopupMessage" = "You have not arranged any activities. You are welcome to start now.";
