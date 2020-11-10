@@ -50,7 +50,7 @@
 "TicketLogout" = "登出";
 "TicketLogoutWarning" = "確定要登出嗎？";
 "TicketLogoutWarningDesc" = "你可能需要重新掃描 QRCode 或重新使用連結登入才能使用這個活動的完整功能";
-"Acknowledgements" = "關於 TCCF";
+"Acknowledgements" = "關於 TCCF App";
 "About" = "關於";
 "AboutPrivacyPolicy" = "隱私權政策";
 "Contributions" = "貢獻者";
